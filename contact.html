@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Contact</title>
+  </head>
+  <body>
+    <header class="background-faded-header">
+      <a href="index.html" id="logo"
+        ><img
+          alt="website logo, a fist holding a dumbbell followed by the numbers 101"
+          src="media/logotrans_smallercropped.png"
+      /></a>
+      <nav class="header-nav">
+        <ul id="nav-list">
+          <li>
+            <a class="navbutton" href="index.html">HOME</a>
+          </li>
+          <li>
+            <a class="navbutton" href="basics.html">BASICS</a>
+          </li>
+          <li>
+            <a class="navbutton" href="nutrition.html">NUTRITION</a>
+          </li>
+          <li>
+            <a class="navbutton" href="training.html">TRAINING</a>
+          </li>
+          <li class="active">
+            <a class="navbutton" id="contactbutton" href="contact.html"
+              >CONTACT</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main id="contact-main">
+      <div class="page-title">
+        <h1>
+          SEND ME <br />
+          A MESSAGE
+        </h1>
+      </div>
+      <form>
+        <div id="form-name">
+          <label for="name">Name</label>
+          <input id="name" type="text" required />
+        </div>
+        <div id="form-email">
+          <label for="email">Email</label>
+          <input id="email" type="email" required />
+        </div>
+        <div id="form-referrer">
+          <label for="referrer">How did you find us?</label>
+          <select id="referrer" name="referrer">
+            <option value="empty">Select an option</option>
+            <option value="jarno">My student Jarno at UCLL</option>
+          </select>
+        </div>
+        <div id="form-message">
+          <textarea
+            name="message"
+            id="message"
+            placeholder="Your message..."
+          ></textarea>
+        </div>
+        <button type="button" onclick="alert('Message received!')">Send</button>
+      </form>
+    </main>
+    <footer>
+      <p>&copy; 2024 | Jarno Mommens | UCLL | 1GPDP2</p>
+    </footer>
+  </body>
+</html>
